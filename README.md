@@ -8,11 +8,13 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
  
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- ```
+```
+
 2. Add the below ```<div>``` DOM element where you want to place the button on the page.
-   ```
-   <div id='btnAppointment'> </div>
-   ```
+```
+  <div id='btnAppointment'> </div>
+```
+
 3. Then add the below code after ending of the </body> tag.
 ```
 <div id='modernScheduler'>
