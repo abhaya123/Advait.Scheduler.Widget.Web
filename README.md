@@ -11,36 +11,32 @@
  ```
 2. Add the below ```<div>``` DOM element where you want to place the button on the page.
    ```
-   <div id='advait_appointment'> </div>
+   <div id='btnAppointment'> </div>
    ```
 3. Then add the below code after ending of the </body> tag.
 ```
-<div id='appointment_modal'>
+<div id='modernScheduler'>
 </div>
 <script>
-    var appointmentButton = "<button class=\"btn btn-primary\" onclick=\"openScheduler()\">Schedule an Appointment<\/button>";
+    var asButton = "<button class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#asModernScheduler\">Schedule an Appointment<\/button>";
     
-    var advaitScheduler = "    <div class=\"modal fade\" id=\"myModalScheduler\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">";
-    advaitScheduler += "        <div class=\"modal-dialog\" style=\"width:650px !important;\">";
-    advaitScheduler += "            <div class=\"modal-content\">";
-    advaitScheduler += "                <div class=\"modal-header\">";
-    advaitScheduler += "                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;<\/button>";
-    advaitScheduler += "                    <h4 class=\"modal-title\" id=\"myModalLabel\">Schedule an Appointment<\/h4>";
-    advaitScheduler += "                <\/div>";
-    advaitScheduler += "                <div class=\"modal-body\">";
-    advaitScheduler += "                    <iframe src=\"http:\/\/doctorscheduler.abhayatech.co.in\/Home\/Index\/def37861\" width=\"600\" height=\"600\" frameborder=\"0\" allowtransparency=\"true\"><\/iframe>";
-    advaitScheduler += "                <\/div>";
-    advaitScheduler += "            <\/div>";
+    var asModal = "<div class=\"modal fade\" id=\"asModernScheduler\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">";
+    asModal += "<div class=\"modal-dialog\" style=\"width:650px !important;\">";
+    asModal += "<div class=\"modal-content\">";
+    asModal += "<div class=\"modal-header\">";
+    asModal += "<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;<\/button>";
+    asModal += "<h4 class=\"modal-title\" id=\"myModalLabel\">Schedule an Appointment<\/h4>";
+    asModal += "<\/div>";
+    asModal += "<div class=\"modal-body\">";
+    asModal += "<iframe src=\"http:\/\/doctorscheduler.abhayatech.co.in\/Home\/Index\/def37861\" width=\"600\" height=\"600\" frameborder=\"0\" allowtransparency=\"true\"><\/iframe>";
+    asModal += "<\/div>";
+    asModal += "<\/div>";
 
-    var link = document.getElementById('advait_appointment');
-    link.innerHTML = appointmentButton;
+    var buttonLink = document.getElementById('btnAppointment');
+    buttonLink.innerHTML = asButton;
 
-    var link2 = document.getElementById('appointment_modal');
-    link2.innerHTML = advaitScheduler;
-
-    function openScheduler() {
-        $('#myModalScheduler').modal("show");
-    }
+    var modalLink = document.getElementById('modernScheduler');
+    modalLink.innerHTML = asModal;
 </script>
 
 ```
