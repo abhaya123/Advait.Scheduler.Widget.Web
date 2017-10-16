@@ -30,7 +30,7 @@
     asModal += "<h4 class=\"modal-title\" id=\"myModalLabel\">Schedule an Appointment<\/h4>";
     asModal += "<\/div>";
     asModal += "<div class=\"modal-body\">";
-    asModal += "<iframe src=\"http:\/\/doctorscheduler.abhayatech.co.in\/Home\/Index\/Your API key(provided by Advait)\" width=\"600\" height=\"600\" frameborder=\"0\" allowtransparency=\"true\"><\/iframe>";
+    asModal += "<iframe src=\"http:\/\/abhayatechglobal.com\/doctorscheduler\/Home\/Index\/Your API key(provided by Advait)\" width=\"600\" height=\"600\" frameborder=\"0\" allowtransparency=\"true\"><\/iframe>";
     asModal += "<\/div>";
     asModal += "<\/div>";
 
